@@ -1,116 +1,520 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Kirill Freelancer</title>
+    <meta name="description" content="Сайт-портфолио">
+    <meta name="author" content="Масляев Кирилл Романович">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Amazing Gallery</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
 </head>
-<body>
 
-    <div class="description">
-        <div class="logo">
-            ABOBA
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio et ipsa cupiditate itaque nemo molestias corporis placeat voluptates dignissimos accusamus tempora, voluptatem voluptate, fugit modi incidunt iste laudantium dicta.</p>
-    </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+                
+                <!-- ru/eng -->
+                <a href="/indexRu.html"><img src="/images/Russia.png" alt=""></a>
+                <a href="/index.html"><img src="/images/UnitedStates.png" alt=""></a> <br> <br>
+                <!-- end ru/eng -->
     
-    <div class="swiper slider slider_main">
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://vk.com/id222210532"><i class="vk" aria-hidden="true">VK</i></a>
+                    </li>
+                    <li>
+                        <a href="https://freelance.habr.com/freelancers/noretorry"><i class="habr" aria-hidden="true">HB</i></a>
+                    </li>
+                    <li>
+                        <a href="https://kwork.ru/user/etxeplay"><i class="kwork" aria-hidden="true">KW</i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_noretorry_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
 
-        <div class="swiper-wrapper slider__wrapper">
+            </div> <!-- end header-nav__content -->
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/1.jpg);"></div>
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+        
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            
+
+                <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
+                    <div class="container">
+                        <div class="header__row">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                                        <div class="profile-thumb" style="background: url(images/user-3.png);"></div>
+                                        <h1><span>Kirill Romanovich</span></h1>
+                                        <h3><span>Web Developer / front-end Developer</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+            
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/2.jpg);"></div>
+           
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://vk.com/id222210532"><i class="vk" aria-hidden="true">VK</i><span>VKontakte</span></a>
+            </li>
+            <li>
+                <a href="https://freelance.habr.com/freelancers/noretorry"><i class="habr" aria-hidden="true">HB</i><span>Habr</span></a>
+            </li>
+            <li>
+                <a href="https://kwork.ru/user/noretorry"><i class="kwork" aria-hidden="true">KW</i><span>Kwork</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_noretorry_/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://t.me/noretorry"><i class="telegram" aria-hidden="true">T</i><span>Telegram</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about blet">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1 display-1--light nomargin">About Me</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <!--  -->			
+            <div class="about_me">
+
+                <div class="about__image">
+                    <img class="about__png" src="/images/justme.png" alt="">
+                </div>
+
+                <div class="about_text">
+                    <h1>Hello There!</h1>
+                    <p>My name is <span style="color: #39B54A;"> Kirill. </span> I am a 3 year Business Informatics student. Experience in HTML layout for over a year, I know <span style="color: #39B54A;">HTML5, CSS3, JS</span> very well! <br>
+                    Created commercial sites, multi-pages, roulette sites, modified sites after someone else's layout.
+                    I take on the work with full responsibility, <br> <span style="color: #39B54A;">I do it quickly and efficiently! ;) </span></p>
+                    <p class="social__icons"></p>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <!-- иконки тут надо -->
+        </div> <!-- end about-desc -->
+
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">9</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">742</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">53</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">13</div>
+                <h5>Happy Clients</h5> 
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/3.jpg);"></div>
+        </div> <!-- end about-stats -->
+
+        
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What I Do</h3>
+                <h1 class="display-2">SERVICES</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Illustration</h3>
+                    <p>I have experience in creating illustrations, company logos and common icons. (I love Adobe Illustrator and Photoshop)
+                    </p>
+                </div>
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/4.jpg);"></div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Marketing</h3>
+                    <p>3 years of marketing training. (Yes, the marketer is already in my blood) SEO, Social media promotion
+                    </p>
+                </div>
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/5.jpg);"></div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Web Design</h3>
+                    <p>Yes, I'm a front-end developer. If you don't have your own design, I can make one for you! (you may not like xD)
+                    </p>
+                </div>
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/6.jpg);"></div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>I will create or layout a website for you, taking into account your wishes
+                    </p>
+                </div>
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/7.jpg);"></div>
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works swork">
+
+        <div class="intro-wrap swork-intro">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">I love what I do, check out some of my latest works</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="swiper slider slider_main">
+
+            <div class="swiper-wrapper slider__wrapper">
+    
+                <div class="swiper-slide slider__item">
+                    <a href="amazing_gallery/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="25%" style="background-image: url(images/amazing.png);"></div></a>
+                </div>
+    
+                <div class="swiper-slide slider__item">
+                    <a href="3DSCENE/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/3dscene.png);"></div></a>
+                </div>
+    
+                <div class="swiper-slide slider__item">
+                    <a href="activar/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="25%" style="background-image: url(images/activ.png);"></div></a>
+                </div>
+    
+                <div class="swiper-slide slider__item">
+                    <a href="pizza/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/pizza.png);"></div></a>
+                </div>
+
+                <div class="swiper-slide slider__item">
+                    <a href="architect/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="25%" style="background-image: url(images/arci.png);"></div></a>
+                </div>
+
+                <div class="swiper-slide slider__item">
+                    <a href="judge/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/judge.png);"></div></a>
+                </div>
+
+                <div class="swiper-slide slider__item">
+                    <a href="heal/HEALING/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="25%" style="background-image: url(images/healing.png);"></div></a>
+                </div>
+
+                <div class="swiper-slide slider__item">
+                    <a href="mogo/index.html" target="__blank"><div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/mogoo.png);"></div></a>
+                </div>
+
+
+
+
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/8.jpg);"></div>
+
+    
+        </div>
+
+        
+
+    </section> <!-- end s-works -->
+
+
+    <!-- clients
+    ================================================== -->
+    
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact me</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+
+
+                    <div class="cinfo">
+                        <h5>Email me At</h5>
+                        <p>
+                            etxe.play@gmail.com<br>
+
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call me At</h5>
+                        <p>
+                            Mobile: (+7)-995-228-20-11<br>
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="https://kwork.ru/user/noretorry"><i class="kwork" aria-hidden="true">Kwork</i></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/noretorry"><i class="telegram" aria-hidden="true"></i><span>t.me</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/_noretorry_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+
+                        
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
             </div>
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/9.jpg);"></div>
+            <div class="col-six tab-full right footer-subscribe">
+
+
             </div>
 
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright eforz 2022</span> 
+                    <span>Site Template by <a href="https://vk.com/id222210532">eforz</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
 
         </div>
 
-    </div>
-    <!-- main slider end -->
-    <!-- bg slider start -->
-    <div class="swiper slider slider_bg">
+    </div> <!-- end photoSwipe background -->
 
-        <div class="swiper-wrapper slider__wrapper">
 
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/1.jpg);"></div>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/2.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/3.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/4.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/5.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/6.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/7.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/8.jpg);"></div>
-            </div>
-
-            <div class="swiper-slide slider__item">
-                <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/9.jpg);"></div>
-            </div>
-
-
         </div>
-
     </div>
 
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 
     <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/commom.js"></script>
 </body>
+
 </html>
